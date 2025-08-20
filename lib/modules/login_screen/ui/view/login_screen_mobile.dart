@@ -105,7 +105,9 @@ class LoginScreenMobile extends StatelessWidget {
                               child: PrimaryButton(
                                 title: "Masuk",
                                 buttonColor: CustomColor.primaryColor,
-                                onPressed: () {},
+                                onPressed: () {
+                                  controller.login();
+                                },
                               ),
                             ),
                           ],
