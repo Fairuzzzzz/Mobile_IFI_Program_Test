@@ -25,7 +25,7 @@ class DepositCard extends StatelessWidget {
       height: 86,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
-        color: CustomColor.primaryColor.withOpacity(0.2),
+        color: CustomColor.primaryColor.withOpacity(0.1),
       ),
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -35,13 +35,13 @@ class DepositCard extends StatelessWidget {
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 SvgPicture.asset('assets/icons/money_bag.svg'),
                 ScaledHorizontalSpace(8),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     TitleHeading5Widget(
                       text: "Tagihan",
@@ -59,6 +59,7 @@ class DepositCard extends StatelessWidget {
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.end,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 TitleHeading1Widget(
                   text: amount,

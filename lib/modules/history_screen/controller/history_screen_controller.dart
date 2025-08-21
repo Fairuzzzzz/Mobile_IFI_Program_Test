@@ -9,6 +9,39 @@ class HistoryScreenController extends GetxController
   final _selectedTab = 0.obs;
   int get selectedTab => _selectedTab.value;
 
+  final outcomeData = [
+    {
+      'date': 'Bulan Mei 2023',
+      'amount': 'Rp 4.000.000',
+      'details': [
+        {'label': 'Uang Bulanan', 'amount': 'Rp 2.000.000', 'isPaid': true},
+        {'label': 'Biaya Asrama', 'amount': 'Rp 1.000.000', 'isPaid': true},
+        {'label': 'Katering', 'amount': 'Rp 500.000', 'isPaid': true},
+        {'label': 'Laundry', 'amount': 'Rp 500.000', 'isPaid': false},
+      ],
+    },
+    {
+      'date': 'Bulan April 2023',
+      'amount': 'Rp 4.000.000',
+      'details': [
+        {'label': 'Uang Bulanan', 'amount': 'Rp 2.000.000', 'isPaid': true},
+        {'label': 'Biaya Asrama', 'amount': 'Rp 1.000.000', 'isPaid': true},
+        {'label': 'Katering', 'amount': 'Rp 500.000', 'isPaid': true},
+        {'label': 'Laundry', 'amount': 'Rp 500.000', 'isPaid': true},
+      ],
+    },
+    {
+      'date': 'Bulan Maret 2023',
+      'amount': 'Rp 4.000.000',
+      'details': [
+        {'label': 'Uang Bulanan', 'amount': 'Rp 2.000.000', 'isPaid': true},
+        {'label': 'Biaya Asrama', 'amount': 'Rp 1.000.000', 'isPaid': true},
+        {'label': 'Katering', 'amount': 'Rp 500.000', 'isPaid': true},
+        {'label': 'Laundry', 'amount': 'Rp 500.000', 'isPaid': true},
+      ],
+    },
+  ];
+
   @override
   void onInit() {
     super.onInit();

@@ -8,6 +8,7 @@ import 'package:mobile_ifi_app/core/ui/widgets/text_label/title_heading3_widget.
 import 'package:mobile_ifi_app/core/ui/widgets/text_label/title_heading5_widget.dart';
 import 'package:mobile_ifi_app/modules/history_screen/controller/history_screen_controller.dart';
 import 'package:mobile_ifi_app/modules/history_screen/ui/widget/deposit_card.dart';
+import 'package:mobile_ifi_app/modules/history_screen/ui/widget/outcome_card.dart';
 
 class HistoryScreenMobile extends StatelessWidget {
   const HistoryScreenMobile({super.key});
@@ -133,7 +134,20 @@ class HistoryScreenMobile extends StatelessWidget {
   }
 
   Widget _buildPengeluaranTab() {
-    return Container();
+    final controller = Get.find<HistoryScreenController>();
+    return ListView.separated(
+      padding: EdgeInsets.symmetric(vertical: 8),
+      itemCount: controller.outcomeData.length,
+      separatorBuilder: (context, index) => ScaledVerticalSpace(12),
+      itemBuilder: (context, index) {
+        final item = controller.outcomeData[index];
+        return OutcomeCard(
+          amount: item['amount'] as String,
+          date: item['date'] as String,
+          details: List<Map<String, dynamic>>.from(item['details'] as List),
+        );
+      },
+    );
   }
 
   Widget _buildSetoranTab() {
