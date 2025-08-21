@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_ifi_app/core/ui/widgets/layout/scaled_horizontal_space.dart';
 import 'package:mobile_ifi_app/core/ui/widgets/layout/scaled_vertical_space.dart';
 import 'package:mobile_ifi_app/core/ui/widgets/text_label/title_heading3_widget.dart';
 
