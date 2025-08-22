@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/route_manager.dart';
-import 'package:get/utils.dart';
 import 'package:mobile_ifi_app/core/routes/routes.dart';
 import 'package:mobile_ifi_app/core/ui/theme/custom_color.dart';
 import 'package:mobile_ifi_app/core/ui/widgets/button/primary_button.dart';
@@ -32,7 +31,7 @@ class ProfileScreenMobile extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(top: 56, bottom: 56),
                 child: TitleHeading3Widget(
-                  text: "Profile",
+                  text: "Profil",
                   color: Colors.white,
                   fontSize: 28,
                 ),
@@ -106,7 +105,7 @@ class ProfileScreenMobile extends StatelessWidget {
                                             fontSize: 20,
                                           ),
                                           IconButton(
-                                            icon: Icon(Icons.edit),
+                                            icon: Icon(Icons.edit_document),
                                             color: CustomColor.primaryColor,
                                             onPressed: () {
                                               Get.toNamed(Routes.editProfile);

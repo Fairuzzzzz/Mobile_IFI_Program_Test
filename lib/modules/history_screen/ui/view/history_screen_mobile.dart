@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_instance/src/extension_instance.dart';
-import 'package:get/utils.dart';
 import 'package:mobile_ifi_app/core/ui/theme/custom_color.dart';
 import 'package:mobile_ifi_app/core/ui/widgets/layout/scaled_vertical_space.dart';
 import 'package:mobile_ifi_app/core/ui/widgets/text_label/title_heading3_widget.dart';
@@ -151,15 +149,17 @@ class HistoryScreenMobile extends StatelessWidget {
   }
 
   Widget _buildSetoranTab() {
+    final controller = Get.find<HistoryScreenController>();
     return ListView.separated(
       padding: EdgeInsets.symmetric(vertical: 8),
-      itemCount: 5,
-      separatorBuilder: (context, index) => ScaledVerticalSpace(4),
+      itemCount: controller.depositData.length,
+      separatorBuilder: (context, index) => ScaledVerticalSpace(12),
       itemBuilder: (context, index) {
+        final item = controller.depositData[index];
         return DepositCard(
-          amount: "Rp 4.000.000",
-          date: "2023-07-01",
-          status: "Berhasil",
+          amount: item['amount'] as String,
+          date: item['date'] as String,
+          status: item['status'] as String,
         );
       },
     );

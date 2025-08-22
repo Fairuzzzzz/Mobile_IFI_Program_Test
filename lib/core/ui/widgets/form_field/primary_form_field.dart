@@ -98,6 +98,21 @@ class _PrimaryFormFieldState extends State<PrimaryFormField> {
             fontWeight: FontWeight.w400,
             color: CustomColor.grayColor,
           ),
+          suffixIcon: widget.isPassword
+              ? IconButton(
+                  icon: Icon(
+                    isVisibility
+                        ? Icons.visibility_off_outlined
+                        : Icons.visibility_outlined,
+                    color: CustomColor.grayColor,
+                  ),
+                  onPressed: () {
+                    setState(() {
+                      isVisibility = !isVisibility;
+                    });
+                  },
+                )
+              : widget.suffixIcon,
           border: OutlineInputBorder(
             borderSide: BorderSide(color: Colors.black.withOpacity(0.1)),
             borderRadius: BorderRadius.circular(widget.radius ?? 12),

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:iconify_flutter/iconify_flutter.dart';
 import 'package:iconify_flutter/icons/material_symbols.dart';
-import 'package:iconify_flutter/icons/zondicons.dart';
 import 'package:mobile_ifi_app/core/ui/theme/custom_color.dart';
 import 'package:mobile_ifi_app/core/ui/widgets/layout/scaled_horizontal_space.dart';
 import 'package:mobile_ifi_app/core/ui/widgets/layout/scaled_vertical_space.dart';

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:get/route_manager.dart';
-import 'package:get/utils.dart';
 import 'package:iconify_flutter/iconify_flutter.dart';
 import 'package:iconify_flutter/icons/material_symbols.dart';
 import 'package:mobile_ifi_app/core/routes/routes.dart';
@@ -51,7 +49,7 @@ class EditProfileScreenMobile extends StatelessWidget {
                       },
                     ),
                     TitleHeading3Widget(
-                      text: "Profile",
+                      text: "Profil",
                       color: Colors.white,
                       fontSize: 28,
                     ),

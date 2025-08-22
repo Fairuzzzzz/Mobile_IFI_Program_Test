@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get_navigation/src/extension_navigation.dart';
+import 'package:get/state_manager.dart';
+import 'package:mobile_ifi_app/core/routes/routes.dart';
 import 'package:mobile_ifi_app/core/ui/theme/custom_color.dart';
 import 'package:mobile_ifi_app/core/ui/widgets/button/primary_button.dart';
 import 'package:mobile_ifi_app/core/ui/widgets/layout/scaled_horizontal_space.dart';
@@ -7,7 +10,7 @@ import 'package:mobile_ifi_app/core/ui/widgets/layout/scaled_vertical_space.dart
 import 'package:mobile_ifi_app/core/ui/widgets/text_label/title_heading1_widget.dart';
 import 'package:mobile_ifi_app/core/ui/widgets/text_label/title_heading3_widget.dart';
 import 'package:mobile_ifi_app/core/ui/widgets/text_label/title_heading5_widget.dart';
-import 'package:mobile_ifi_app/modules/savings_screen/ui/widget/savings_table_widget.dart';
+import 'package:mobile_ifi_app/modules/savings_screen/core/ui/widget/savings_table_widget.dart';
 
 class SavingsScreenMobile extends StatelessWidget {
   const SavingsScreenMobile({super.key});
@@ -147,7 +150,9 @@ class SavingsScreenMobile extends StatelessWidget {
                             title: "Setor Tabungan",
                             buttonColor: CustomColor.primaryColor,
                             buttonTextColor: Colors.white,
-                            onPressed: () {},
+                            onPressed: () {
+                              Get.toNamed(Routes.depositSavings);
+                            },
                           ),
                         ],
                       ),

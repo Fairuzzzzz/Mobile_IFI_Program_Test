@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:get/route_manager.dart';
 import 'package:mobile_ifi_app/core/ui/theme/custom_color.dart';
 import 'package:mobile_ifi_app/core/ui/theme/custom_style.dart';
 import 'package:mobile_ifi_app/modules/history_screen/ui/view/history_screen.dart';
 import 'package:mobile_ifi_app/modules/home_screen/ui/view/home_screen.dart';
 import 'package:mobile_ifi_app/modules/main_screen/controller/mainscreen_controller.dart';
 import 'package:mobile_ifi_app/modules/profile_screen/ui/view/profile_screen.dart';
-import 'package:mobile_ifi_app/modules/savings_screen/ui/view/savings_screen.dart';
+import 'package:mobile_ifi_app/modules/savings_screen/core/ui/view/savings_screen.dart';
 
 class Mainscreen extends StatefulWidget {
   const Mainscreen({super.key});

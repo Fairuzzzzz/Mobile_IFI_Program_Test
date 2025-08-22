@@ -7,7 +7,8 @@ import 'package:mobile_ifi_app/modules/main_screen/ui/view/mainscreen.dart';
 import 'package:mobile_ifi_app/modules/profile_screen/ui/view/edit_profile_screen.dart';
 import 'package:mobile_ifi_app/modules/profile_screen/ui/view/profile_screen.dart';
 import 'package:mobile_ifi_app/modules/profile_screen/ui/view/qr_code_screen.dart';
-import 'package:mobile_ifi_app/modules/savings_screen/ui/view/savings_screen.dart';
+import 'package:mobile_ifi_app/modules/savings_screen/core/ui/view/savings_screen.dart';
+import 'package:mobile_ifi_app/modules/savings_screen/modules/deposit_savings/ui/view/deposit_savings_screen.dart';
 
 class RoutesPages {
   static var list = [
@@ -19,5 +20,6 @@ class RoutesPages {
     GetPage(name: Routes.savings, page: () => SavingsScreen()),
     GetPage(name: Routes.editProfile, page: () => EditProfileScreen()),
     GetPage(name: Routes.qrCode, page: () => QrCodeScreen()),
+    GetPage(name: Routes.depositSavings, page: () => DepositSavingsScreen()),
   ];
 }

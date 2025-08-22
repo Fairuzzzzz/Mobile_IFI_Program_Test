@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/src/simple/get_controllers.dart';
 
 class HistoryScreenController extends GetxController
     with GetSingleTickerProviderStateMixin {
@@ -40,6 +39,13 @@ class HistoryScreenController extends GetxController
         {'label': 'Laundry', 'amount': 'Rp 500.000', 'isPaid': true},
       ],
     },
+  ];
+
+  final depositData = [
+    {'date': '15 Mei 2025', 'amount': 'Rp 4.000.000', 'status': 'Tertunda'},
+    {'date': '21 April 2025', 'amount': 'Rp 500.000', 'status': 'Berhasil'},
+    {'date': '05 April 2025', 'amount': 'Rp 3.500.000', 'status': 'Berhasil'},
+    {'date': '03 Maret 2025', 'amount': 'Rp 4.000.000', 'status': 'Berhasil'},
   ];
 
   @override

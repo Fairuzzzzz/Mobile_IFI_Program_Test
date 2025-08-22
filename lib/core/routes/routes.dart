@@ -11,4 +11,5 @@ class Routes {
   static const String profile = '/profile';
   static const String editProfile = '/editProfile';
   static const String qrCode = '/qrCode';
+  static const String depositSavings = '/depositSavings';
 }

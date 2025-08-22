@@ -5,7 +5,6 @@ import 'package:iconify_flutter/iconify_flutter.dart';
 import 'package:iconify_flutter/icons/material_symbols.dart';
 import 'package:mobile_ifi_app/core/ui/widgets/layout/scaled_vertical_space.dart';
 import 'package:mobile_ifi_app/core/ui/widgets/text_label/title_heading3_widget.dart';
-import 'package:mobile_ifi_app/core/ui/widgets/text_label/title_heading4_widget.dart';
 import 'package:mobile_ifi_app/core/ui/widgets/text_label/title_heading5_widget.dart';
 
 class QrCodeScreenMobile extends StatelessWidget {
